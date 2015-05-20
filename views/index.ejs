@@ -1,0 +1,6 @@
+<% if (!user) { %>
+	<h2>Please log in.</h2>
+	<a href="/auth/google/?return_to=<%= return_to %>">Login with Google</a>
+<% } else { %>
+	<h2>Hello, <%= user.displayName %>.</h2>
+<% } %>
